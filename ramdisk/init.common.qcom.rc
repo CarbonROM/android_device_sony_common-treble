@@ -45,6 +45,7 @@ on boot
 
     # Create vpp directory
     mkdir /persist/vpp 0770 media media
+    setprop sys.usb.ffs.aio_compat 1
 
 on post-fs-data
     # MSM specific files that need to be created on /data
