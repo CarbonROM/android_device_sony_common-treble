@@ -46,7 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ### RILD
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
     telephony.lteOnCdmaDevice=1
 
@@ -90,7 +90,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ### NFC
 PRODUCT_PROPERTY_OVERRIDES += \
+<<<<<<< HEAD
     ro.nfc.port=I2C
+=======
+    DEVICE_PROVISIONED=1 \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    ril.subscription.types=NV,RUIM \
+    ro.telephony.default_network=9,1 \
+    persist.vendor.radio.apm_sim_not_pwdn=1 \
+    persist.vendor.radio.custom_ecc=1 \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.sib16_support=1
+>>>>>>> 89d275a... nile-common: Rename rild.libpath to vendor.rild.libpath
 
 ### WIFI
 PRODUCT_PROPERTY_OVERRIDES += \
