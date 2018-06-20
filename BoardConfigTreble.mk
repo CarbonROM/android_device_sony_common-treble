@@ -75,3 +75,5 @@ TARGET_USES_NQ_NFC := true
 ### SEPOLICY
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/sony/common-treble/sepolicy/vendor
+
+BUILD_BROKEN_DUP_RULES := true
