@@ -23,6 +23,7 @@ BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += coherent_pool=8M
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1 user_debug=31
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 ### GRAPHICS
 USE_OPENGL_RENDERER := true
@@ -79,5 +80,5 @@ AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 USE_XML_AUDIO_POLICY_CONF := 1
 
 ### SEPOLICY
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/sony/common-treble/sepolicy/vendor
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += device/sony/common-treble/sepolicy/vendor
