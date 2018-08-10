@@ -81,4 +81,4 @@ USE_XML_AUDIO_POLICY_CONF := 1
 
 ### SEPOLICY
 #include device/qcom/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += device/sony/common-treble/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += device/sony/common-treble/sepolicy/vendor-minimal
