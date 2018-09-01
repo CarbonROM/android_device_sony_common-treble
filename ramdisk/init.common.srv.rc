@@ -14,7 +14,7 @@
 
 # Trim Area Daemon
 service tad_static /sbin/tad_static /dev/block/bootdevice/by-name/TA 0,16
-    class trimarea
+    class core
     user vendor_tad
     group vendor_tad root
     socket tad stream 0660 system vendor_trimarea
