@@ -15,9 +15,9 @@
 # Trim Area Daemon
 service tad_static /sbin/tad_static /dev/block/bootdevice/by-name/TA 0,16
     class trimarea
-    user tad
-    group tad root
-    socket tad stream 0660 system trimarea
+    user vendor_tad
+    group vendor_tad root
+    socket vendor_tad stream 0660 system vendor_trimarea
     seclabel u:r:tad:s0
     writepid /dev/cpuset/system-background/tasks
     shutdown critical
