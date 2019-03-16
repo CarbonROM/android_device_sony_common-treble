@@ -23,13 +23,6 @@ service vendor.tad /vendor/bin/tad /dev/block/bootdevice/by-name/TA 0,16
     shutdown critical
 
 # QCOM prop
-service vendor.cnd /vendor/bin/cnd
-    class main
-    user system
-    group system wifi inet radio wakelock net_admin
-    writepid /dev/cpuset/system-background/tasks
-
-# QCOM prop
 service irsc_util /vendor/bin/irsc_util "/system/vendor/etc/sec_config"
     class core
     user root
