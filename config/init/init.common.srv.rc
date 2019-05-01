@@ -282,11 +282,11 @@ service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
     disabled
 
 ### Offline charger
-service charger /charger
+service charger /system/bin/charger
     class charger
     critical
     group system graphics input log
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
     writepid /dev/cpuset/system-background/tasks
 
 service qbcharger /charger -m 1
