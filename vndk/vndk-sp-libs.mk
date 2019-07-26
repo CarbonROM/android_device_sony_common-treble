@@ -27,6 +27,7 @@ VNDK_SP_LIBRARIES := \
     libRSDriver \
     libRS_internal \
     libandroid_net \
+    libdexfile_support \
     libbacktrace \
     libbase \
     libbcinfo \
