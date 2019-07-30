@@ -285,6 +285,7 @@ service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
 service charger /system/bin/charger
     class charger
     critical
+    user system
     group system graphics input log
     seclabel u:r:charger:s0
     writepid /dev/cpuset/system-background/tasks
