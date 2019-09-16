@@ -80,15 +80,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl
 
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common
-
 ### TELEPHONY
 PRODUCT_PACKAGES += \
+    ims-ext-common_system \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
+    ims-ext-common_system \
     telephony-ext
 
 ### RCS
