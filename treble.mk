@@ -177,3 +177,6 @@ PRODUCT_PACKAGES += \
 # WEAVER
 PRODUCT_PACKAGES += \
     android.hardware.weaver@1.0
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
