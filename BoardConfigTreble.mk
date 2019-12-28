@@ -35,13 +35,6 @@ TARGET_USES_GRALLOC1 := true
 # RENDERSCRIPT
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
-### PARTITIONS
-BOARD_ROOT_EXTRA_FOLDERS := \
-    idd \
-    misc \
-    qns \
-    rca
-
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 # Build ext4 tools - system/vold
 TARGET_USERIMAGES_USE_EXT4 := true
